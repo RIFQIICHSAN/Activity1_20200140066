@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Viewer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Identity Information</div>
+        <hr>
+        <p th:text="${Data}"></p>
+        <table border="2">
+            <tr th:each="baris:${dataktp}">
+                <td th:text="${baris[0]}"></td>
+                <td th:text="${baris[1]}"></td>
+                <td th:text="${baris[2]}"></td>
+                <td th:text="${baris[3]}"></td>
+            </tr>
+        </table>
+    </body>
+</html>
